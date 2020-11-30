@@ -45,7 +45,7 @@ const RotasTab = () => {
           unmountOnBlur: true,
         }}
       />      
-      <Tab.Screen name="Item" component={Item} />
+      <Tab.Screen name="Item" component={Item} initialParams={{item: {}, operacao: 'adicionar'}} />
     </Tab.Navigator>
   );
 }
